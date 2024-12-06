@@ -125,14 +125,14 @@ public class Scrabble {
 					hand = MyString.remove(hand, input);
 					score = wordScore(input);
 					totalScore += score;
-					System.out.println(input + " earned " + score + " points. Score: " + totalScore + " points");
+					System.out.println(input + " earned " + score + " points. Score: " + totalScore + " points\n");
 				}
 				else{
 					if (wordInHand){
-						System.out.println("No such word in the dictionary. Try again.");
+						System.out.println("No such word in the dictionary. Try again.\n");
 					}
 					else{
-						System.out.println("Invalid word. Try again.");
+						System.out.println("Invalid word. Try again.\n");
 					}					
 					wordInHand = true;
 				}
