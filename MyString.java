@@ -8,7 +8,7 @@ public class MyString {
         System.out.println(countChar(hello, 'l'));
         System.out.println(countChar(hello, 'z'));
         System.out.println(spacedString(hello));
-        //// Put your other tests here.
+        System.out.println(subsetOf("mt", "commit"));
     }
 
     /**
@@ -42,12 +42,28 @@ public class MyString {
      * @return true is str1 is a subset of str2, false otherwise
      */
     public static boolean subsetOf(String str1, String str2) {
-        for (int i = 0; i <= str2.length() - str1.length(); i++){
-            if(str2.substring(i, i + str1.length()).equals(str1)){
-                return true;
+        String str3 = str1;
+        String str4 = str2;
+        boolean charInString;
+
+        for (int i = 0; i < str3.length(); i++){
+            charInString = false;
+            for (int j = 0; j < str4.length(); j++){
+                if (str3.charAt(i) == str4.charAt(j)){
+                    charInString = true;
+                    if (j != str4.length() - 1){
+                    str4 = str4.substring(0, j) + str4.substring(j + 1);
+                    }
+                    else {
+                        str4 = str4.substring(0, j);
+                    }
+                }
+            }
+            if (!charInString){
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     /** Returns a string which is the same as the given string, with a space
