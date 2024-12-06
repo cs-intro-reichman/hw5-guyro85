@@ -3,12 +3,9 @@
  */
 public class MyString {
     public static void main(String args[]) {
-        String hello = "hello";
-        System.out.println(countChar(hello, 'h'));
-        System.out.println(countChar(hello, 'l'));
-        System.out.println(countChar(hello, 'z'));
+        String hello = "";
         System.out.println(spacedString(hello));
-        System.out.println(subsetOf("mt", "commit"));
+        System.out.println(remove("meet", "committee"));
     }
 
     /**
@@ -75,6 +72,9 @@ public class MyString {
      * @return a string consisting of the characters of str, separated by spaces.
      */
     public static String spacedString(String str) {
+        if (str == ""){
+            return "";
+        }
         String str2 = "";
         str2 += str.charAt(0);
         for (int i = 1; i < str.length(); i++){
