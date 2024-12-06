@@ -5,7 +5,7 @@ public class MyString {
     public static void main(String args[]) {
         String hello = "";
         System.out.println(spacedString(hello));
-        System.out.println(remove("meet", "committee"));
+        System.out.println(subsetOf("runi", "running"));
     }
 
     /**
@@ -113,8 +113,8 @@ public class MyString {
      * @return a string consisting of str1 minus all the characters of str2
      */
     public static String remove(String str1, String str2) {
-        String str3 = str2;
-        String str4 = str1;
+        String str3 = str1;
+        String str4 = str3;
         
         while (!str4.isEmpty()){
          for (int i = 0; i < str3.length(); i++){
