@@ -129,10 +129,10 @@ public class Scrabble {
 				}
 				else{
 					if (wordInHand){
-						System.out.println("No such word in the dictionary. Try again.\n");
+						System.out.println("No such word in the dictionary. Try again.");
 					}
 					else{
-						System.out.println("Invalid word. Try again.\n");
+						System.out.println("Invalid word. Try again.");
 					}					
 					wordInHand = true;
 				}
