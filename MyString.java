@@ -5,7 +5,7 @@ public class MyString {
     public static void main(String args[]) {
         String hello = "";
         System.out.println(spacedString(hello));
-        System.out.println(subsetOf("runi", "running"));
+        System.out.println(remove("comittee", "meet"));
     }
 
     /**
@@ -114,7 +114,7 @@ public class MyString {
      */
     public static String remove(String str1, String str2) {
         String str3 = str1;
-        String str4 = str3;
+        String str4 = str2;
         
         while (!str4.isEmpty()){
          for (int i = 0; i < str3.length(); i++){

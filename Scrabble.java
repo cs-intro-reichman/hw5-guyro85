@@ -67,7 +67,7 @@ public class Scrabble {
 		}
 		score *= word.length();
 		if (MyString.subsetOf("runi", word)){
-			score += 100;
+			score += 1000;
 		}
 		if (word.length() == HAND_SIZE){
 			score += 50;
@@ -170,7 +170,7 @@ public class Scrabble {
 	public static void main(String[] args) {
 		//// Uncomment the test you want to run
 		////testBuildingTheDictionary();  
-		////testScrabbleScore();    
+		testScrabbleScore();    
 		////testCreateHands();  
 		////testPlayHands();
 		////playGame();
